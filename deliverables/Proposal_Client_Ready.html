@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usulan perbaikan template Excel</title>
+  <style>
+    :root { --navy:#17365d; --teal:#0f6b78; --ink:#273444; --muted:#667382; --line:#d8e1e7; --pale:#f2f6f8; --gold:#d6a84b; }
+    * { box-sizing:border-box; }
+    @page { size:A4; margin:0; }
+    body { margin:0; color:var(--ink); font-family:"Segoe UI",Arial,sans-serif; background:#edf1f4; line-height:1.55; }
+    .page { width:210mm; min-height:297mm; margin:10mm auto; padding:20mm 20mm 18mm 25mm; background:white; position:relative; page-break-after:always; overflow:hidden; }
+    .page:last-child { page-break-after:auto; }
+    .stripe { position:absolute; inset:0 auto 0 0; width:6mm; background:var(--navy); }
+    .eyebrow { color:var(--teal); font-size:10px; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; }
+    h1 { margin:8mm 0 5mm; max-width:155mm; color:var(--navy); font-size:34px; line-height:1.18; }
+    h2 { margin:0 0 5mm; color:var(--navy); font-size:22px; line-height:1.25; }
+    h3 { margin:8mm 0 3mm; color:var(--navy); font-size:15px; }
+    p { margin:0 0 4mm; font-size:11.2px; }
+    .lead { max-width:155mm; color:#465768; font-size:16px; line-height:1.55; }
+    .rule { width:25mm; height:1.5mm; margin:8mm 0; background:var(--gold); }
+    .identity { margin-top:24mm; padding-top:6mm; border-top:1px solid var(--line); display:grid; grid-template-columns:1fr 1fr; gap:12mm; }
+    .identity span { display:block; margin-bottom:2mm; color:var(--muted); font-size:9px; text-transform:uppercase; letter-spacing:1px; }
+    .note { margin:7mm 0; padding:5mm 6mm; background:var(--pale); border-left:1.5mm solid var(--teal); }
+    table { width:100%; border-collapse:collapse; margin:4mm 0 7mm; }
+    th { padding:3mm; color:white; background:var(--navy); text-align:left; font-size:10px; }
+    td { padding:3.2mm; border-bottom:1px solid var(--line); font-size:10.3px; vertical-align:top; }
+    ul { margin:2mm 0 5mm; padding-left:5mm; }
+    li { margin:0 0 2mm; font-size:10.8px; }
+    .price { margin:7mm 0 5mm; padding:6mm; background:var(--navy); color:white; }
+    .price span { display:block; font-size:10px; opacity:.82; }
+    .price strong { display:block; margin:1mm 0; font-size:27px; }
+    .small { color:var(--muted); font-size:9.4px; }
+    .footer { position:absolute; left:25mm; right:20mm; bottom:12mm; display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:3mm; color:var(--muted); font-size:9px; }
+    @media print { body { background:white; } .page { margin:0; } }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <div class="stripe"></div>
+    <div class="eyebrow">Proposal pekerjaan</div>
+    <h1>Perbaikan template Excel untuk tim teknis</h1>
+    <div class="rule"></div>
+    <p class="lead">Pemeriksaan alur kerja, perapian struktur workbook, pengurangan input berulang, dan pengecekan hasil perhitungan.</p>
+
+    <div class="identity">
+      <div><span>Disiapkan untuk</span>Tim teknis dan pengelola workbook</div>
+      <div><span>Disiapkan oleh</span><strong>[Nama Anda]</strong><br>[Email]<br>[Nomor WhatsApp]</div>
+    </div>
+
+    <div class="note" style="margin-top:18mm">
+      <p>Saya pernah mengerjakan perbaikan workbook sejenis. Karena file proyek lama sudah tidak tersedia, saya membuat ulang contoh dengan data fiktif dan melampirkannya bersama proposal ini.</p>
+    </div>
+
+    <div class="footer"><span>Usulan perbaikan template Excel</span><span>September 2026</span></div>
+  </section>
+
+  <section class="page">
+    <div class="stripe"></div>
+    <div class="eyebrow">Rencana pengerjaan</div>
+    <h2>Yang saya pahami dari brief</h2>
+
+    <p>Workbook saat ini memiliki banyak sheet dan rumus yang saling bergantung. Teknisi harus mengisi sebagian data berulang kali, sedangkan data standar dan rumus perlu tetap mudah dirawat. Tim juga perlu mengetahui asal setiap hasil perhitungan.</p>
+
+    <p>Saya akan memeriksa workbook lebih dahulu sebelum mengubah strukturnya. Pemeriksaan tersebut diperlukan untuk menemukan hubungan antar-sheet, rumus yang dipakai bersama, external link, named range, macro, serta bagian yang rawan terhapus atau salah isi.</p>
+
+    <h3>Urutan kerja</h3>
+
+    <table>
+      <thead><tr><th style="width:20%">Tahap</th><th>Yang saya kerjakan</th></tr></thead>
+      <tbody>
+        <tr><td>1. Pemeriksaan</td><td>Mencatat alur input, sumber data, hubungan antar-sheet, rumus, dan laporan. Tim memilih beberapa kasus yang hasilnya sudah benar sebagai pembanding.</td></tr>
+        <tr><td>2. Perapian</td><td>Memisahkan area input, data standar, perhitungan, dan laporan. Istilah serta urutan kerja teknisi dipertahankan selama masih masuk akal.</td></tr>
+        <tr><td>3. Pengerjaan</td><td>Mengambil data standar secara otomatis, menambahkan validasi, dan mengunci sel formula. Pengguna tetap dapat mengubah sel yang memang perlu diisi.</td></tr>
+        <tr><td>4. Pemeriksaan hasil</td><td>Membandingkan workbook lama dan baru pada kasus acuan. Setiap selisih dicatat dan dibahas sebelum file masuk ke tahap uji.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      <p>Saya tidak akan mengganti metode atau rumus teknis tanpa persetujuan penanggung jawab teknis. Jika ada usulan perubahan, saya akan menunjukkan rumus lama, alasan perubahan, dan pengaruhnya pada contoh hasil.</p>
+    </div>
+
+    <h3>Yang akan diterima tim</h3>
+
+    <ul>
+      <li>workbook yang sudah dirapikan dan siap diuji;</li>
+      <li>master data yang lebih mudah diperbarui;</li>
+      <li>catatan perubahan dan hasil perbandingan perhitungan;</li>
+      <li>panduan singkat untuk pengguna dan pengelola workbook; serta</li>
+      <li>satu sesi handover dan dua putaran revisi dalam ruang lingkup.</li>
+    </ul>
+
+    <div class="footer"><span>[Nama Anda]</span><span>2</span></div>
+  </section>
+
+  <section class="page">
+    <div class="stripe"></div>
+    <div class="eyebrow">Contoh kerja, jadwal, dan biaya</div>
+    <h2>Workbook contoh yang dilampirkan</h2>
+
+    <p>Workbook contoh memakai data fiktif. Teknisi mengisi nomor pekerjaan, tanggal, Asset ID, dan hasil pengukuran pada satu sheet. Deskripsi alat, lokasi, unit, nilai standar, dan toleransi diambil dari master data. Workbook lalu menghitung status dan memperbarui laporan.</p>
+
+    <p>Sheet VALIDATION berisi lima kasus acuan. Hasil hitung workbook dibandingkan dengan nilai yang diharapkan. Contoh ini memperlihatkan cara saya bekerja, sedangkan rumus pada proyek akan mengikuti metode yang disetujui tim.</p>
+
+    <h3>Perkiraan jadwal</h3>
+
+    <table>
+      <thead><tr><th>Tahap</th><th style="width:28%">Waktu</th></tr></thead>
+      <tbody>
+        <tr><td>Pemeriksaan workbook dan penetapan kasus acuan</td><td>1 sampai 2 hari kerja</td></tr>
+        <tr><td>Perapian struktur dan pengerjaan</td><td>4 sampai 6 hari kerja</td></tr>
+        <tr><td>Validasi, UAT, dan revisi</td><td>2 sampai 3 hari kerja</td></tr>
+        <tr><td>Dokumentasi dan handover</td><td>1 hari kerja</td></tr>
+      </tbody>
+    </table>
+
+    <div class="price"><span>Biaya yang diajukan</span><strong>Rp8.500.000</strong><span>Perkiraan waktu 8 sampai 12 hari kerja</span></div>
+
+    <p class="small">Perkiraan ini berlaku untuk maksimal 15 sheet aktif, tanpa integrasi sistem lain, dan tanpa pembuatan VBA baru. Jika isi workbook berbeda dari asumsi tersebut, saya akan menjelaskan perubahan biaya dan jadwal sebelum mengerjakan bagian tambahan.</p>
+
+    <h3>File yang diperlukan untuk memulai</h3>
+
+    <ul>
+      <li>workbook versi terbaru dan data contoh yang sudah dianonimkan bila diperlukan;</li>
+      <li>contoh laporan yang hasilnya sudah diperiksa;</li>
+      <li>daftar metode yang memerlukan persetujuan sebelum diubah; dan</li>
+      <li>informasi versi Excel serta penggunaan VBA, Power Query, atau external link.</li>
+    </ul>
+
+    <p style="margin-top:7mm"><strong>[Nama Anda]</strong><br>[Email] | [Nomor WhatsApp] | [Tautan Portofolio/Profil]</p>
+
+    <div class="footer"><span>Proposal berlaku 14 hari</span><span>3</span></div>
+  </section>
+</body>
+</html>
